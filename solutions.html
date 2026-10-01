@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solutions — Kynqel Tech</title>
+  <meta name="description" content="Explore Kynqel's six enterprise AI and digital engineering capability domains.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/style.css">
+  <style>
+    .sol-detail-section {
+      padding-block: var(--gesso-space-8);
+      border-bottom: 1px solid var(--gesso-divider);
+    }
+    .sol-detail-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+      gap: var(--gesso-space-8);
+      align-items: start;
+    }
+    .sol-badge {
+      display: inline-block;
+      font-family: var(--gesso-font-mono);
+      font-size: var(--gesso-text-xs);
+      font-weight: 600;
+      color: var(--gesso-primary);
+      margin-bottom: var(--gesso-space-2);
+    }
+    .feature-list {
+      list-style: none;
+      margin-top: var(--gesso-space-4);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: var(--gesso-text-sm);
+      color: var(--gesso-fg);
+    }
+    .feature-check {
+      color: var(--gesso-primary);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .spec-box {
+      background: var(--gesso-neutral-100);
+      border: 1px solid rgba(23, 24, 26, 0.06);
+      border-radius: var(--gesso-radius-lg);
+      padding: var(--gesso-space-4);
+      box-shadow: var(--gesso-shadow-sm);
+    }
+    .spec-row {
+      display: flex;
+      justify-content: space-between;
+      padding-block: 10px;
+      border-bottom: 1px solid var(--gesso-divider);
+      font-size: var(--gesso-text-sm);
+    }
+    .spec-row:last-child {
+      border-bottom: none;
+    }
+    .spec-k {
+      color: var(--gesso-fg-muted);
+    }
+    .spec-v {
+      font-family: var(--gesso-font-mono);
+      font-weight: 500;
+      color: var(--gesso-fg);
+    }
+    @media (max-width: 900px) {
+      .sol-detail-grid {
+        grid-template-columns: 1fr;
+        gap: var(--gesso-space-4);
+      }
+    }
+  </style>
+</head>
+<body data-brief-id="screen-root" data-brief-role="screen">
+
+<header class="glass-nav">
+  <div class="wrap nav">
+    <a href="index.html" class="brand" aria-label="Kynqel home">
+      <span>KYNQEL</span>
+      <span class="brand-badge">Enterprise</span>
+    </a>
+
+    <input type="checkbox" id="gesso-nav-check-1" class="gesso-nav-check" aria-label="Toggle navigation">
+    <label for="gesso-nav-check-1" class="gesso-nav-burger" aria-label="Menu"><span></span></label>
+
+    <nav class="nav-links" aria-label="Primary">
+      <div class="dd">
+        <a class="dd-t active" href="solutions.html" aria-haspopup="true">Solutions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9l6 6l6-6"/></svg></a>
+        <div class="dd-menu">
+          <a href="#generative-ai">Generative AI</a>
+          <a href="#ai-agents">AI Agents</a>
+          <a href="#ai-automation">AI Automation</a>
+          <a href="#predictive-analytics">Predictive Analytics</a>
+          <a href="#digital-engineering">Digital Engineering</a>
+          <a href="#custom-ai">Custom AI Solutions</a>
+        </div>
+      </div>
+      <div class="dd">
+        <a class="dd-t" href="industries.html" aria-haspopup="true">Industries <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9l6 6l6-6"/></svg></a>
+        <div class="dd-menu">
+          <a href="industries.html#automotive">Automotive</a>
+          <a href="industries.html#retail">Retail</a>
+          <a href="industries.html#healthcare">Healthcare</a>
+          <a href="industries.html#industrial">Industrial</a>
+          <a href="industries.html#sustainability">Sustainability</a>
+          <a href="industries.html#government">Government</a>
+          <a href="industries.html#shipbuilding">Shipbuilding</a>
+          <a href="industries.html#aerospace">Aerospace</a>
+        </div>
+      </div>
+      <div class="dd">
+        <a class="dd-t" href="talent.html" aria-haspopup="true">Company <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9l6 6l6-6"/></svg></a>
+        <div class="dd-menu">
+          <a href="company.html">About Kynqel</a>
+          <a href="talent.html">Our Talent Model</a>
+          <a href="company.html#leadership">Leadership</a>
+          <a href="company.html#partners">Partners</a>
+          <a href="company.html#careers">Careers</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="dd">
+        <a class="dd-t" href="solutions.html" aria-haspopup="true">Insights <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9l6 6l6-6"/></svg></a>
+        <div class="dd-menu">
+          <a href="#">Research</a>
+          <a href="#">AI Insights</a>
+          <a href="#">Engineering</a>
+          <a href="#">Case Studies</a>
+          <a href="#">Reports</a>
+        </div>
+      </div>
+      <a href="#contact" class="btn btn-primary">Work With Us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content" class="sticky-reveal-main">
+  <!-- Page Hero -->
+  <section class="wrap page-hero">
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span style="color: var(--gesso-fg)">Solutions</span>
+    </div>
+    <h1 class="t-hero">Enterprise Capabilities. Measured Impact.</h1>
+    <p class="t-body">We architect, deploy, and govern high-precision AI solutions that solve non-trivial operational bottlenecks across global enterprise environments.</p>
+  </section>
+
+  <!-- 01 Generative AI -->
+  <section class="wrap sol-detail-section" id="generative-ai">
+    <div class="sol-detail-grid">
+      <div>
+        <span class="sol-badge">CAPABILITY 01 // COGNITIVE</span>
+        <h2 class="t-sub" style="margin-bottom: 12px">Enterprise Generative AI &amp; Retrieval Mesh</h2>
+        <p class="t-body">Transform vast troves of unstructured institutional knowledge into deterministic, cited, real-time intelligence. Built on private enterprise infrastructure with granular role-based access control and zero data leakage guarantees.</p>
+        
+        <ul class="feature-list">
+          <li><span class="feature-check">&check;</span> <strong>Hybrid Search &amp; Vector Embeddings:</strong> Sub-second semantic search combining BM25 lexical precision with dense vector embeddings.</li>
+          <li><span class="feature-check">&check;</span> <strong>Model Agnostic Orchestration:</strong> Seamless routing across Claude 3.5, Gemini 1.5 Pro, Llama 3, and proprietary fine-tuned weights.</li>
+          <li><span class="feature-check">&check;</span> <strong>Hallucination Defense:</strong> Multi-stage verification pipelines enforcing 99.4% ground-truth attribution on financial and technical filings.</li>
+        </ul>
+      </div>
+
+      <div class="spec-box">
+        <span class="t-meta" style="color: var(--gesso-primary); display: block; margin-bottom: 8px">Deployment Blueprint</span>
+        <div class="spec-row">
+          <span class="spec-k">Target Workload</span>
+          <span class="spec-v">Institutional Knowledge &amp; Decision Support</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">Supported Latency</span>
+          <span class="spec-v">&lt; 350ms Time-to-First-Token</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">Compliance</span>
+          <span class="spec-v">SOC-2 Type II, HIPAA, FedRAMP High</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">Deployment Topology</span>
+          <span class="spec-v">VPC Air-Gapped / Kubernetes Mesh</span>
+        </div>
+        <div style="margin-top: 20px">
+          <a href="#contact" class="btn btn-ghost" style="width: 100%; text-align: center">Request Architecture Briefing &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 AI Agents -->
+  <section class="wrap sol-detail-section" id="ai-agents">
+    <div class="sol-detail-grid">
+      <div>
+        <span class="sol-badge">CAPABILITY 02 // AUTONOMY</span>
+        <h2 class="t-sub" style="margin-bottom: 12px">Autonomous AI Agents &amp; Tool Orchestration</h2>
+        <p class="t-body">Deploy self-governing multi-agent systems engineered to execute complex multi-step workflows. Our agents decompose high-level business directives into verified sub-tasks with deterministic human-in-the-loop oversight.</p>
+        
+        <ul class="feature-list">
+          <li><span class="feature-check">&check;</span> <strong>Multi-Agent Swarm Dynamics:</strong> Planner, executor, critic, and verification topologies running in parallel.</li>
+          <li><span class="feature-check">&check;</span> <strong>Enterprise API Tool Calling:</strong> Native, validated integrations with Salesforce, SAP, ServiceNow, and internal data lakes.</li>
+          <li><span class="feature-check">&check;</span> <strong>Reversible State Machines:</strong> Every action carries transaction rollback capability to prevent irreversible mistakes.</li>
+        </ul>
+      </div>
+
+      <div class="spec-box">
+        <span class="t-meta" style="color: var(--gesso-primary); display: block; margin-bottom: 8px">Deployment Blueprint</span>
+        <div class="spec-row">
+          <span class="spec-k">Target Workload</span>
+          <span class="spec-v">Multi-system Cross-Functional Operations</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">Task Success Rate</span>
+          <span class="spec-v">98.2% on Standardized ERP Workflows</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">Safety Protocol</span>
+          <span class="spec-v">Threshold-triggered Human Approval</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">Telemetry</span>
+          <span class="spec-v">OpenTelemetry Agent Tracing</span>
+        </div>
+        <div style="margin-top: 20px">
+          <a href="#contact" class="btn btn-ghost" style="width: 100%; text-align: center">Request Architecture Briefing &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 AI Automation -->
+  <section class="wrap sol-detail-section" id="ai-automation">
+    <div class="sol-detail-grid">
+      <div>
+        <span class="sol-badge">CAPABILITY 03 // SCALE</span>
+        <h2 class="t-sub" style="margin-bottom: 12px">Cognitive Process Automation (CPA)</h2>
+        <p class="t-body">Replace fragile legacy RPA scripts with adaptive neural pipelines. Process invoices, bills of lading, procurement contracts, and regulatory filings with zero manual template tuning.</p>
+        
+        <ul class="feature-list">
+          <li><span class="feature-check">&check;</span> <strong>Document Vision Foundation Models:</strong> Flawless data extraction across rotated, skewed, and multilingual physical scans.</li>
+          <li><span class="feature-check">&check;</span> <strong>Exception Handling Loop:</strong> Low-confidence items automatically route to queue review with active learning feedback.</li>
+          <li><span class="feature-check">&check;</span> <strong>Real-Time Ledger Reconciliation:</strong> Continuous matching across trade confirmations and ERP entries.</li>
+        </ul>
+      </div>
+
+      <div class="spec-box">
+        <span class="t-meta" style="color: var(--gesso-primary); display: block; margin-bottom: 8px">Deployment Blueprint</span>
+        <div class="spec-row">
+          <span class="spec-k">Target Workload</span>
+          <span class="spec-v">High-Volume Document &amp; Financial Streams</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">Extraction Accuracy</span>
+          <span class="spec-v">99.7% Key-Value Field Accuracy</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">Throughput</span>
+          <span class="spec-v">150,000+ Docs / Day / Node</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">ROI Horizon</span>
+          <span class="spec-v">&lt; 90 Days to Full Payback</span>
+        </div>
+        <div style="margin-top: 20px">
+          <a href="#contact" class="btn btn-ghost" style="width: 100%; text-align: center">Request Architecture Briefing &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 Predictive Analytics -->
+  <section class="wrap sol-detail-section" id="predictive-analytics">
+    <div class="sol-detail-grid">
+      <div>
+        <span class="sol-badge">CAPABILITY 04 // FORECASTING</span>
+        <h2 class="t-sub" style="margin-bottom: 12px">Predictive Telemetry &amp; Decision Science</h2>
+        <p class="t-body">Leverage high-dimensional time-series neural networks to foresee equipment failures, inventory stockouts, and demand volatility weeks ahead of occurrence.</p>
+        
+        <ul class="feature-list">
+          <li><span class="feature-check">&check;</span> <strong>Industrial IoT Anomaly Detection:</strong> Vibration, thermal, and electrical telemetry processing at the edge.</li>
+          <li><span class="feature-check">&check;</span> <strong>Hierarchical Demand Forecasting:</strong> SKU-store level forecasting incorporating macro indicators and seasonal factors.</li>
+          <li><span class="feature-check">&check;</span> <strong>Continuous Drift Monitoring:</strong> Automated model retraining when distribution shift exceeds tolerance.</li>
+        </ul>
+      </div>
+
+      <div class="spec-box">
+        <span class="t-meta" style="color: var(--gesso-primary); display: block; margin-bottom: 8px">Deployment Blueprint</span>
+        <div class="spec-row">
+          <span class="spec-k">Target Workload</span>
+          <span class="spec-v">Industrial IoT &amp; Supply Chain Resilience</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">Lead Time Warning</span>
+          <span class="spec-v">14 - 21 Days Prior to Equipment Failure</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">False Alarm Rate</span>
+          <span class="spec-v">&lt; 0.3% False Positive Ratio</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">Inference Engine</span>
+          <span class="spec-v">Triton / ONNX Runtime C++</span>
+        </div>
+        <div style="margin-top: 20px">
+          <a href="#contact" class="btn btn-ghost" style="width: 100%; text-align: center">Request Architecture Briefing &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 Digital Engineering -->
+  <section class="wrap sol-detail-section" id="digital-engineering">
+    <div class="sol-detail-grid">
+      <div>
+        <span class="sol-badge">CAPABILITY 05 // INFRASTRUCTURE</span>
+        <h2 class="t-sub" style="margin-bottom: 12px">Digital Product &amp; Distributed Systems Engineering</h2>
+        <p class="t-body">Re-platform legacy monoliths into high-throughput, fault-tolerant microservices. We build resilient distributed architectures that handle petabyte-scale data flows with zero downtime.</p>
+        
+        <ul class="feature-list">
+          <li><span class="feature-check">&check;</span> <strong>Event-Driven Architectures:</strong> Kafka, Pulsar, and gRPC microservices delivering 100,000+ msg/sec.</li>
+          <li><span class="feature-check">&check;</span> <strong>Cloud Native Kubernetes:</strong> Multi-region active-active deployments with automated failover and chaos engineering validation.</li>
+          <li><span class="feature-check">&check;</span> <strong>Enterprise API Gateways:</strong> Rate limiting, JWT/mTLS authentication, and API contract enforcement.</li>
+        </ul>
+      </div>
+
+      <div class="spec-box">
+        <span class="t-meta" style="color: var(--gesso-primary); display: block; margin-bottom: 8px">Deployment Blueprint</span>
+        <div class="spec-row">
+          <span class="spec-k">Target Workload</span>
+          <span class="spec-v">High-Concurrency Core Transactional Systems</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">Uptime SLA</span>
+          <span class="spec-v">99.995% High Availability</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">Modernization Speed</span>
+          <span class="spec-v">Iterative Strangler Fig Architecture</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">Languages</span>
+          <span class="spec-v">Rust, Go, TypeScript, Python, Java</span>
+        </div>
+        <div style="margin-top: 20px">
+          <a href="#contact" class="btn btn-ghost" style="width: 100%; text-align: center">Request Architecture Briefing &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 Custom AI Solutions -->
+  <section class="wrap sol-detail-section" id="custom-ai">
+    <div class="sol-detail-grid">
+      <div>
+        <span class="sol-badge">CAPABILITY 06 // PROPRIETARY</span>
+        <h2 class="t-sub" style="margin-bottom: 12px">Custom Model Pretraining &amp; Domain Adaptation</h2>
+        <p class="t-body">When generic commercial models fail your domain's jargon or privacy boundaries, Kynqel trains and tunes proprietary neural networks exclusively on your enterprise intellectual property.</p>
+        
+        <ul class="feature-list">
+          <li><span class="feature-check">&check;</span> <strong>Domain Pre-training &amp; LoRA:</strong> Efficient adaptation on legal, medical, aeronautical, or financial lexicons.</li>
+          <li><span class="feature-check">&check;</span> <strong>Quantization &amp; Edge Optimization:</strong> 4-bit and 8-bit quantized models optimized for NVIDIA, Apple Silicon, and edge hardware.</li>
+          <li><span class="feature-check">&check;</span> <strong>Complete IP Ownership:</strong> 100% of weights, training datasets, and checkpoints belong exclusively to your enterprise.</li>
+        </ul>
+      </div>
+
+      <div class="spec-box">
+        <span class="t-meta" style="color: var(--gesso-primary); display: block; margin-bottom: 8px">Deployment Blueprint</span>
+        <div class="spec-row">
+          <span class="spec-k">Target Workload</span>
+          <span class="spec-v">Proprietary IP, Highly Regulated Domains</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">IP Ownership</span>
+          <span class="spec-v">100% Client Owned (Zero Vendor Lock-in)</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">Hardware Target</span>
+          <span class="spec-v">H100/A100 Clusters, On-Premises TPU/GPU</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">Training Frameworks</span>
+          <span class="spec-v">PyTorch, DeepSpeed, vLLM, TensorRT</span>
+        </div>
+        <div style="margin-top: 20px">
+          <a href="#contact" class="btn btn-ghost" style="width: 100%; text-align: center">Request Architecture Briefing &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>Ready to Build What&rsquo;s Next?</h2>
+      <p class="t-body">Let&rsquo;s turn your business challenges into intelligent, scalable solutions.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Book a Demo</a>
+        <a href="contact.html" class="btn btn-ghost">Talk to Our Team</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Sticky Reveal Footer Container -->
+<div class="sticky-footer-holder" id="sticky-footer-holder">
+  <footer class="wrap site sticky-reveal-footer">
+    <div class="foot-top">
+      <div class="foot-brand-col">
+        <span class="brand">KYNQEL TECH</span>
+        <p>Precision-engineered digital transformation and specialized talent solutions for modern enterprise scale.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col"><span class="t-meta">Solutions</span><a href="solutions.html#generative-ai">Generative AI</a><a href="solutions.html#ai-agents">AI Agents</a><a href="solutions.html#ai-automation">AI Automation</a><a href="solutions.html#predictive-analytics">Predictive Analytics</a><a href="solutions.html#digital-engineering">Digital Engineering</a><a href="solutions.html#custom-ai">Custom AI</a></div>
+        <div class="foot-col"><span class="t-meta">Industries</span><a href="industries.html#automotive">Automotive</a><a href="industries.html#retail">Retail</a><a href="industries.html#healthcare">Healthcare</a><a href="industries.html#industrial">Industrial</a><a href="industries.html#sustainability">Sustainability</a><a href="industries.html#government">Government</a><a href="industries.html#shipbuilding">Shipbuilding</a><a href="industries.html#aerospace">Aerospace</a></div>
+        <div class="foot-col"><span class="t-meta">Company</span><a href="company.html">About</a><a href="talent.html">Our Talent Model</a><a href="company.html#leadership">Leadership</a><a href="company.html#partners">Partners</a><a href="company.html#careers">Careers</a><a href="contact.html">Contact</a></div>
+        <div class="foot-col"><span class="t-meta">Insights</span><a href="#">Research</a><a href="#">AI Insights</a><a href="#">Engineering</a><a href="#">Case Studies</a><a href="#">Reports</a></div>
+        <div class="foot-col"><span class="t-meta">Trust</span><a href="company.html#security">Security</a><a href="company.html#privacy">Privacy</a><a href="#">Responsible AI</a><a href="company.html#compliance">Compliance</a></div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Kynqel Tech Pvt. Ltd. All rights reserved.</span>
+      <nav><a href="contact.html">Privacy Policy</a><a href="contact.html">Terms of Use</a><a href="company.html#security">Security</a><a href="contact.html">Cookie Policy</a><a href="https://linkedin.com">LinkedIn</a></nav>
+    </div>
+  </footer>
+</div>
+
+<!-- Interactive Demo Modal -->
+<div class="modal-overlay" id="demo-modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close-btn" data-close-demo-modal aria-label="Close dialog">&times;</button>
+    <span class="t-meta" style="color: var(--gesso-primary); margin-bottom: 8px; display: block">Schedule an Architecture Session</span>
+    <h3 class="t-sub" style="margin-bottom: 8px">Work With Kynqel</h3>
+    <p class="t-body" style="font-size: 0.875rem; margin-bottom: 24px">Connect directly with our enterprise solutions architecture team to discuss capabilities, timelines, and tailored deployment models.</p>
+    <form id="demo-form">
+      <div class="form-group"><label class="form-label" for="demo-name">Full Name</label><input class="form-input" type="text" id="demo-name" placeholder="Dr. Sarah Chen" required></div>
+      <div class="form-group"><label class="form-label" for="demo-email">Enterprise Work Email</label><input class="form-input" type="email" id="demo-email" placeholder="sarah.chen@enterprise.com" required></div>
+      <div class="form-group"><label class="form-label" for="demo-solution">Solution of Interest</label><select class="form-select" id="demo-solution"><option value="Generative AI & LLM Governance">Generative AI &amp; LLM Governance</option><option value="Autonomous AI Agents">Autonomous AI Agents</option><option value="Intelligent Process Automation">Intelligent Process Automation</option><option value="Predictive Analytics & Forecasting">Predictive Analytics &amp; Forecasting</option><option value="Digital Engineering Squads">Digital Engineering Squads</option><option value="Talent Model & Dedicated Teams">Talent Model &amp; Dedicated Teams</option></select></div>
+      <div class="form-group"><label class="form-label" for="demo-notes">Project Scope or Objective</label><textarea class="form-textarea" id="demo-notes" rows="3" placeholder="Briefly describe your objectives or current architecture bottlenecks..."></textarea></div>
+      <div style="display: flex; gap: 12px; justify-content: flex-end; margin-top: 24px"><button type="button" class="btn btn-ghost" data-close-demo-modal>Cancel</button><button type="submit" class="btn btn-brand btn-rolling"><span class="btn-rolling-label"><span class="btn-rolling-track"><span class="btn-rolling-text btn-rolling-front">Request Executive Briefing</span><span class="btn-rolling-text btn-rolling-back" aria-hidden="true">Request Executive Briefing</span></span></span></button></div>
+    </form>
+  </div>
+</div>
+
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &amp; Architecture Briefings — Kynqel Tech</title>
+  <meta name="description" content="Engage with Kynqel enterprise architects for tailored AI transformations and dedicated squad deployments.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/style.css">
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+      gap: var(--gesso-space-8);
+      align-items: start;
+      padding-block: var(--gesso-space-12);
+    }
+    .contact-card {
+      background: var(--gesso-neutral-100);
+      border: 1px solid rgba(23, 24, 26, 0.06);
+      border-radius: var(--gesso-radius-lg);
+      padding: var(--gesso-space-6);
+      box-shadow: var(--gesso-shadow-sm);
+    }
+    .office-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--gesso-space-4);
+      margin-top: var(--gesso-space-6);
+    }
+    .office-card {
+      background: var(--gesso-neutral-100);
+      border: 1px solid rgba(23, 24, 26, 0.05);
+      border-radius: var(--gesso-radius-lg);
+      padding: var(--gesso-space-4);
+    }
+    .office-city {
+      font-family: var(--gesso-font-display);
+      font-size: var(--gesso-text-lg);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .office-role {
+      font-size: var(--gesso-text-xs);
+      font-family: var(--gesso-font-mono);
+      color: var(--gesso-primary);
+      margin-bottom: 8px;
+      display: block;
+    }
+    .faq-list {
+      margin-top: var(--gesso-space-6);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .faq-item {
+      background: var(--gesso-neutral-100);
+      border: 1px solid rgba(23, 24, 26, 0.05);
+      border-radius: var(--gesso-radius-lg);
+      padding: var(--gesso-space-4);
+    }
+    .faq-q {
+      font-family: var(--gesso-font-display);
+      font-size: var(--gesso-text-base);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .faq-a {
+      font-size: var(--gesso-text-sm);
+      color: var(--gesso-fg-muted);
+      line-height: 1.5;
+    }
+    @media (max-width: 900px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body data-brief-id="screen-root" data-brief-role="screen">
+
+<header class="glass-nav">
+  <div class="wrap nav">
+    <a href="index.html" class="brand" aria-label="Kynqel home">
+      <span>KYNQEL</span>
+      <span class="brand-badge">Enterprise</span>
+    </a>
+
+    <input type="checkbox" id="gesso-nav-check-1" class="gesso-nav-check" aria-label="Toggle navigation">
+    <label for="gesso-nav-check-1" class="gesso-nav-burger" aria-label="Menu"><span></span></label>
+
+    <nav class="nav-links" aria-label="Primary">
+      <div class="dd">
+        <a class="dd-t" href="solutions.html" aria-haspopup="true">Solutions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9l6 6l6-6"/></svg></a>
+        <div class="dd-menu">
+          <a href="solutions.html#generative-ai">Generative AI</a>
+          <a href="solutions.html#ai-agents">AI Agents</a>
+          <a href="solutions.html#ai-automation">AI Automation</a>
+          <a href="solutions.html#predictive-analytics">Predictive Analytics</a>
+          <a href="solutions.html#digital-engineering">Digital Engineering</a>
+          <a href="solutions.html#custom-ai">Custom AI Solutions</a>
+        </div>
+      </div>
+      <div class="dd">
+        <a class="dd-t" href="industries.html" aria-haspopup="true">Industries <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9l6 6l6-6"/></svg></a>
+        <div class="dd-menu">
+          <a href="industries.html#automotive">Automotive</a>
+          <a href="industries.html#retail">Retail</a>
+          <a href="industries.html#healthcare">Healthcare</a>
+          <a href="industries.html#industrial">Industrial</a>
+          <a href="industries.html#sustainability">Sustainability</a>
+          <a href="industries.html#government">Government</a>
+          <a href="industries.html#shipbuilding">Shipbuilding</a>
+          <a href="industries.html#aerospace">Aerospace</a>
+        </div>
+      </div>
+      <div class="dd">
+        <a class="dd-t" href="talent.html" aria-haspopup="true">Company <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9l6 6l6-6"/></svg></a>
+        <div class="dd-menu">
+          <a href="company.html">About Kynqel</a>
+          <a href="talent.html">Our Talent Model</a>
+          <a href="company.html#leadership">Leadership</a>
+          <a href="company.html#partners">Partners</a>
+          <a href="company.html#careers">Careers</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="dd">
+        <a class="dd-t" href="solutions.html" aria-haspopup="true">Insights <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9l6 6l6-6"/></svg></a>
+        <div class="dd-menu">
+          <a href="#">Research</a>
+          <a href="#">AI Insights</a>
+          <a href="#">Engineering</a>
+          <a href="#">Case Studies</a>
+          <a href="#">Reports</a>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn-primary active">Work With Us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content" class="sticky-reveal-main">
+  <!-- Page Hero -->
+  <section class="wrap page-hero">
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span style="color: var(--gesso-fg)">Contact</span>
+    </div>
+    <h1 class="t-hero">Initiate an Architecture Dialogue.</h1>
+    <p class="t-body">Whether evaluating an enterprise GenAI rollout, distributed microservices refactor, or dedicated engineering squad deployment, our technical partners are ready to engage.</p>
+  </section>
+
+  <!-- Contact Form & Info Layout -->
+  <section class="wrap contact-layout">
+    <div>
+      <span class="t-meta" style="color: var(--gesso-primary)">ENGAGEMENT MODEL</span>
+      <h2 class="t-sub" style="margin-bottom: 12px">Direct Access to Engineering Leadership</h2>
+      <p class="t-body" style="margin-bottom: var(--gesso-space-4)">We do not employ speculative sales representatives. Your inquiry connects you directly with a Solutions Architect with 10+ years of production systems experience.</p>
+
+      <div style="display: flex; flex-direction: column; gap: 16px; margin-top: var(--gesso-space-4)">
+        <div style="display: flex; gap: 12px; align-items: flex-start">
+          <span style="color: var(--gesso-primary); font-weight: 700">&bull;</span>
+          <div>
+            <strong style="font-size: var(--gesso-text-sm)">Confidential NDA Protocol:</strong>
+            <p class="t-body" style="font-size: var(--gesso-text-xs); margin-top: 2px">Standard mutual NDA executed prior to reviewing proprietary architecture diagrams or schemas.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 12px; align-items: flex-start">
+          <span style="color: var(--gesso-primary); font-weight: 700">&bull;</span>
+          <div>
+            <strong style="font-size: var(--gesso-text-sm)">SLA-Backed Response:</strong>
+            <p class="t-body" style="font-size: var(--gesso-text-xs); margin-top: 2px">All qualified enterprise inquiries receive technical response within 2 business hours.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 12px; align-items: flex-start">
+          <span style="color: var(--gesso-primary); font-weight: 700">&bull;</span>
+          <div>
+            <strong style="font-size: var(--gesso-text-sm)">Security Clearance Ready:</strong>
+            <p class="t-body" style="font-size: var(--gesso-text-xs); margin-top: 2px">Engineers available for FedRAMP, HIPAA, and air-gapped on-premises deployments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Consultation Form -->
+    <div class="contact-card">
+      <span class="t-meta" style="color: var(--gesso-primary); margin-bottom: 8px; display: block">Enterprise Intake</span>
+      <h3 class="t-sub" style="font-size: var(--gesso-text-xl); margin-bottom: 16px">Request Architecture Briefing</h3>
+
+      <form id="contact-full-form">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
+          <div class="form-group">
+            <label class="form-label" for="c-name">Full Name *</label>
+            <input class="form-input" type="text" id="c-name" placeholder="Vikram Patel" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="c-title">Title / Role *</label>
+            <input class="form-input" type="text" id="c-title" placeholder="VP of Technology" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="c-email">Enterprise Work Email *</label>
+          <input class="form-input" type="email" id="c-email" placeholder="v.patel@globalbank.com" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
+          <div class="form-group">
+            <label class="form-label" for="c-domain">Primary Capability *</label>
+            <select class="form-select" id="c-domain">
+              <option value="Generative AI & LLM Systems">Generative AI &amp; LLM Systems</option>
+              <option value="Autonomous AI Agents">Autonomous AI Agents</option>
+              <option value="Process & Document Automation">Process &amp; Document Automation</option>
+              <option value="Predictive Analytics & ML">Predictive Analytics &amp; ML</option>
+              <option value="Digital Engineering Squads">Digital Engineering Squads</option>
+              <option value="Talent Model Residency">Talent Model Residency</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="c-timeline">Target Timeline *</label>
+            <select class="form-select" id="c-timeline">
+              <option value="Immediate (< 30 days)">Immediate (&lt; 30 days)</option>
+              <option value="Q3 / Q4 2026">Current Fiscal Quarter</option>
+              <option value="Exploratory Evaluation">Exploratory / Roadmap Planning</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="c-desc">Project Overview or Systems Objective</label>
+          <textarea class="form-textarea" id="c-desc" rows="4" placeholder="Outline current technology stack, data volumes, and targeted business deliverables..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-brand" style="width: 100%; padding-block: 14px; font-weight: 600; margin-top: 8px">
+          Submit Briefing Request &rarr;
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Global Delivery Hubs -->
+  <section class="wrap" style="padding-block: var(--gesso-space-8); border-top: 1px solid var(--gesso-divider)">
+    <span class="t-meta" style="color: var(--gesso-primary)">GLOBAL HUBS</span>
+    <h2 class="t-sub">Engineering Centers of Excellence</h2>
+
+    <div class="office-grid">
+      <div class="office-card">
+        <h4 class="office-city">San Francisco</h4>
+        <span class="office-role">US Headquarters &amp; AI Research</span>
+        <p class="t-body" style="font-size: var(--gesso-text-xs)">555 Mission Street, Suite 2400<br>San Francisco, CA 94105</p>
+      </div>
+
+      <div class="office-card">
+        <h4 class="office-city">London</h4>
+        <span class="office-role">EMEA Enterprise Operations</span>
+        <p class="t-body" style="font-size: var(--gesso-text-xs)">100 Bishopsgate, Level 18<br>London EC2N 4AG, United Kingdom</p>
+      </div>
+
+      <div class="office-card">
+        <h4 class="office-city">Bengaluru</h4>
+        <span class="office-role">Talent Academy &amp; Systems Engineering</span>
+        <p class="t-body" style="font-size: var(--gesso-text-xs)">Outer Ring Road, Tech Corridor<br>Bengaluru, Karnataka 560103, India</p>
+      </div>
+
+      <div class="office-card">
+        <h4 class="office-city">Singapore</h4>
+        <span class="office-role">APAC Financial Systems Hub</span>
+        <p class="t-body" style="font-size: var(--gesso-text-xs)">Marina Bay Financial Centre<br>Tower 2, Singapore 018983</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Engagement FAQ -->
+  <section class="wrap" style="padding-block: var(--gesso-space-12); border-top: 1px solid var(--gesso-divider)">
+    <span class="t-meta" style="color: var(--gesso-primary)">FREQUENTLY ASKED QUESTIONS</span>
+    <h2 class="t-sub">Enterprise Engagement Details</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <h4 class="faq-q">How quickly can a dedicated Kynqel squad be deployed?</h4>
+        <p class="faq-a">Because our talent undergoes continuous pre-vetting and simulated enterprise residency, squads typically begin productive commits within 3 to 5 business days of contract execution.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4 class="faq-q">Who owns the intellectual property and model weights produced during an engagement?</h4>
+        <p class="faq-a">100% of all code, neural network fine-tunes, datasets, pipelines, and architecture diagrams belong entirely and irrevocably to your enterprise under standard work-for-hire agreements.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4 class="faq-q">Can Kynqel engineers work inside air-gapped on-premises environments?</h4>
+        <p class="faq-a">Yes. We regularly deploy into FedRAMP High, air-gapped VPCs, and specialized on-premises HPC clusters without internet backhaul dependencies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>Ready to Build What&rsquo;s Next?</h2>
+      <p class="t-body">Let&rsquo;s turn your business challenges into intelligent, scalable solutions.</p>
+      <div class="hero-actions">
+        <a href="#contact-full-form" class="btn btn-primary">Start Engagement</a>
+        <a href="solutions.html" class="btn btn-ghost">Explore Solutions</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Sticky Reveal Footer Container -->
+<div class="sticky-footer-holder" id="sticky-footer-holder">
+  <footer class="wrap site sticky-reveal-footer">
+    <div class="foot-top">
+      <div class="foot-brand-col">
+        <span class="brand">KYNQEL TECH</span>
+        <p>Precision-engineered digital transformation and specialized talent solutions for modern enterprise scale.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col"><span class="t-meta">Solutions</span><a href="solutions.html#generative-ai">Generative AI</a><a href="solutions.html#ai-agents">AI Agents</a><a href="solutions.html#ai-automation">AI Automation</a><a href="solutions.html#predictive-analytics">Predictive Analytics</a><a href="solutions.html#digital-engineering">Digital Engineering</a><a href="solutions.html#custom-ai">Custom AI</a></div>
+        <div class="foot-col"><span class="t-meta">Industries</span><a href="industries.html#automotive">Automotive</a><a href="industries.html#retail">Retail</a><a href="industries.html#healthcare">Healthcare</a><a href="industries.html#industrial">Industrial</a><a href="industries.html#sustainability">Sustainability</a><a href="industries.html#government">Government</a><a href="industries.html#shipbuilding">Shipbuilding</a><a href="industries.html#aerospace">Aerospace</a></div>
+        <div class="foot-col"><span class="t-meta">Company</span><a href="company.html">About</a><a href="talent.html">Our Talent Model</a><a href="company.html#leadership">Leadership</a><a href="company.html#partners">Partners</a><a href="company.html#careers">Careers</a><a href="contact.html">Contact</a></div>
+        <div class="foot-col"><span class="t-meta">Insights</span><a href="#">Research</a><a href="#">AI Insights</a><a href="#">Engineering</a><a href="#">Case Studies</a><a href="#">Reports</a></div>
+        <div class="foot-col"><span class="t-meta">Trust</span><a href="company.html#security">Security</a><a href="company.html#privacy">Privacy</a><a href="#">Responsible AI</a><a href="company.html#compliance">Compliance</a></div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Kynqel Tech Pvt. Ltd. All rights reserved.</span>
+      <nav><a href="contact.html">Privacy Policy</a><a href="contact.html">Terms of Use</a><a href="company.html#security">Security</a><a href="contact.html">Cookie Policy</a><a href="https://linkedin.com">LinkedIn</a></nav>
+    </div>
+  </footer>
+</div>
+
+
+<script type="module" src="/src/main.js"></script>
+<script>
+  document.getElementById('contact-full-form')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Thank you for initiating contact with Kynqel. Our enterprise solutions architecture director will reach out within 2 hours.');
+    e.target.reset();
+  });
+</script>
+</body>
+</html>
